@@ -11,7 +11,7 @@ website:
   site-url: https://turinglang.org/
   site-path: "/"
   favicon: "assets/favicon.ico"
-  search: 
+  search:
     location: navbar
     type: overlay
   navbar:
@@ -49,7 +49,7 @@ website:
   sidebar:
     - text: documentation
       collapse-level: 1
-      contents: 
+      contents:
         - section: "Users"
           # href: tutorials/index.qmd, This page will be added later so keep this line commented
           contents:
@@ -58,10 +58,9 @@ website:
 
           - section: "Usage Tips"
             collapse-level: 1
-            contents: 
+            contents:
               - tutorials/docs-10-using-turing-autodiff/index.qmd
               - tutorials/usage-custom-distribution/index.qmd
-              - tutorials/usage-probability-interface/index.qmd
               - tutorials/usage-modifying-logprob/index.qmd
               - tutorials/usage-generated-quantities/index.qmd
               - tutorials/docs-17-mode-estimation/index.qmd
@@ -71,7 +70,7 @@ website:
               - tutorials/docs-16-using-turing-external-samplers/index.qmd
 
           - section: "Tutorials"
-            contents: 
+            contents:
               - tutorials/00-introduction/index.qmd
               - text: Gaussian Mixture Models
                 href: tutorials/01-gaussian-mixture-model/index.qmd
@@ -128,7 +127,7 @@ website:
     background: "#073c44"
     left: |
       Turing is created by <a href="http://mlg.eng.cam.ac.uk/hong/" target="_blank">Hong Ge</a>, and lovingly maintained by the <a href="https://github.com/TuringLang/Turing.jl/graphs/contributors" target="_blank">core team</a> of volunteers. <br>
-      The contents of this website are © 2024 under the terms of the <a href="https://github.com/TuringLang/Turing.jl/blob/master/LICENCE" target="_blank">MIT License</a>. 
+      The contents of this website are © 2024 under the terms of the <a href="https://github.com/TuringLang/Turing.jl/blob/master/LICENCE" target="_blank">MIT License</a>.
 
     right:
       - icon: twitter
@@ -161,6 +160,31 @@ execute:
 
 # Global Variables to use in any qmd files using:
 # {{< meta site-url >}}
+
 site-url: https://turinglang.org/
-get-started: docs/tutorials/docs-00-getting-started/
-tutorials-intro: docs/tutorials/00-introduction/
+
+get-started: tutorials/docs-00-getting-started/
+tutorials-intro: tutorials/00-introduction/
+
+# meta for tutorial 00-introduction
+
+beta: https://en.wikipedia.org/wiki/Beta_distribution/
+conjugate-prior: https://en.wikipedia.org/wiki/Conjugate_prior/
+condition-doc: https://turinglang.github.io/DynamicPPL.jl/stable/api/#Condition-and-decondition
+hmc-doc: https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo
+abstractmcmc-doc: https://turinglang.github.io/AbstractMCMC.jl/dev/api/
+
+# meta for 01-gaussian-mixture-model
+
+particle-gibbs-doc: https://www.stats.ox.ac.uk/%7Edoucet/andrieu_doucet_holenstein_PMCMC.pdf
+turing-doc-sampling-multiple-chains: https://turinglang.org/dev/docs/using-turing/guide/#sampling-multiple-chains
+stan-doc-identifying-mixture-models: https://mc-stan.org/users/documentation/case-studies/identifying_mixture_models.html
+bijectors-ordered-bijector: https://turinglang.org/Bijectors.jl/dev/transforms/#Bijectors.OrderedBijector
+logexpfunctions-doc: https://juliastats.org/LogExpFunctions.jl/stable/
+distributions-mixture-doc: https://juliastats.org/Distributions.jl/stable/mixture/
+stan-latent-discrete-doc: https://mc-stan.org/docs/stan-users-guide/latent-discrete.html
+
+
+# meta for 01-logistic-regression
+
+bayesian-logistic-regression: https://en.wikipedia.org/wiki/Logistic_regression#Bayesian
