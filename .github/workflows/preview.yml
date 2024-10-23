@@ -48,6 +48,11 @@ jobs:
 
       - name: Render Quarto site
         run: quarto render
+        
+      - name: Check links with linkcheck
+        uses: filiph/linkcheck@3.0.0
+        with:
+          url: ./_site 
 
       - name: Save _freeze folder
         id: cache-save
