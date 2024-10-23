@@ -77,6 +77,11 @@ jobs:
 
       - name: Render Quarto site
         run: quarto render
+        
+      - name: Check links with linkcheck
+        uses: filiph/linkcheck@3.0.0
+        with:
+          url: ./_site
 
       - name: Rename original search index
         run: mv _site/search.json _site/search_original.json
